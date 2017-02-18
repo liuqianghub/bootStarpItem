@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>demo</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/top.css"/>
+    <link rel="stylesheet" href="css/cover.css"/>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.js"></script>
+</head>
+<body>
+<!--模态框start-->
+<div class="mask" id="mask">
+    <div class="maskUl">
+        <ul>
+            <li class="LogOrReg">
+                <span class="glyphicon glyphicon-user"></span>
+                <input type="button" value="登录/注册"/>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--模态框end-->
+<!--头部start-->
+<header class="header" data-spy="affix" data-offset-top="80">
+    <nav class="navbar navTop">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed maskShow">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+                <a class="nav_search" href="javascript:;"><span class="glyphicon glyphicon-search"></span>
+
+                    <div class="searchInp">
+                        <input type="tel" placeholder="请输入关键字" class="inpS"/>
+                        <span class="serS"><input type="button" class="btnS"/><span
+                                class="glyphicon glyphicon-search"></span></span>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                            <span class="glyphicon-class">首页</span>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-edit"></span>
+                            <span class="glyphicon-class">创业资讯</span>
+                        </a>
+                        <ul class="secondUl">
+                            <li><a href="javascript:;">列表1</a></li>
+                            <li><a href="javascript:;">列表2</a></li>
+                            <li><a href="javascript:;">列表3</a></li>
+                            <li><a href="javascript:;">列表4</a></li>
+                            <li><a href="javascript:;">列表5</a></li>
+                            <li><a href="javascript:;">列表6</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                            <span class="glyphicon-class">创业指导</span>
+                        </a>
+                        <ul class="secondUl">
+                            <li><a href="javascript:;">列表1</a></li>
+                            <li><a href="javascript:;">列表2</a></li>
+                            <li><a href="javascript:;">列表3</a></li>
+                            <li><a href="javascript:;">列表4</a></li>
+                            <li><a href="javascript:;">列表4</a></li>
+                            <li><a href="javascript:;">列表4</a></li>
+                            <li><a href="javascript:;">列表5</a></li>
+                            <li><a href="javascript:;">列表6</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                            <span class="glyphicon-class">创业点子</span>
+                        </a>
+                        <ul class="secondUl">
+                            <li><a href="javascript:;">列表1</a></li>
+                            <li><a href="javascript:;">列表2</a></li>
+                            <li><a href="javascript:;">列表3</a></li>
+                            <li><a href="javascript:;">列表4</a></li>
+                            <li><a href="javascript:;">列表5</a></li>
+                            <li><a href="javascript:;">列表6</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
+                            <span class="glyphicon-class">职场江湖</span>
+                        </a>
+                        <ul class="secondUl">
+                            <li><a href="javascript:;">列表1</a></li>
+                            <li><a href="javascript:;">列表2</a></li>
+                            <li><a href="javascript:;">列表3</a></li>
+                            <li><a href="javascript:;">列表5</a></li>
+                            <li><a href="javascript:;">列表6</a></li>
+                            <li><a href="javascript:;">列表6</a></li>
+                            <li><a href="javascript:;">列表6</a></li>
+                            <li><a href="javascript:;">列表6</a></li>
+                            <li><a href="javascript:;">列表6</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                            <span class="glyphicon-class">求职攻略</span>
+                        </a>
+                        <ul class="secondUl">
+                            <li><a href="javascript:;">列表1</a></li>
+                            <li><a href="javascript:;">列表2</a></li>
+                            <li><a href="javascript:;">列表4</a></li>
+                            <li><a href="javascript:;">列表5</a></li>
+                            <li><a href="javascript:;">列表6</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>
+                            <span class="glyphicon-class">励志</span>
+                        </a>
+                        <ul class="secondUl">
+                            <li><a href="javascript:;">列表1</a></li>
+                            <li><a href="javascript:;">列表2</a></li>
+                            <li><a href="javascript:;">列表3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</header>
+<!--头部end-->
+<!--内容部分start-->
+<div class="content">
+    <div class="container">
+        <div class="con_right hidden-sm hidden-xs">
+            <!--网站公告start-->
+            <div class="notice">
+                <h3><span>网站公告</span></h3>
+                <ul>
+                    <li>（1）<a href="#">雷克萨斯LC 500：世界首款应用10速自</a><span class="time">01-16</span></li>
+                    <li>（2）<a href="#">雷克萨斯LC 500：世界首款应用10速自</a><span class="time">01-16</span></li>
+                    <li>（3）<a href="#">雷克萨斯LC 500：世界首款应用10速自</a><span class="time">01-16</span></li>
+                    <li>（4）<a href="#">雷克萨斯LC 500：世界首款应用10速自</a><span class="time">01-16</span></li>
+                    <li>（5）<a href="#">雷克萨斯LC 500：世界首款应用10速自</a><span class="time">01-16</span></li>
+                    <li>（6）<a href="#">雷克萨斯LC 500：世界首款应用10速自</a><span class="time">01-16</span></li>
+                </ul>
+            </div>
+            <!--网站公告end-->
+            <!--用户信息start-->
+            <div class="user_info">
+                <div class="welcome">
+                    您好：<b>游客</b>,登陆账号
+                </div>
+                <div class="user_con">
+                    <div class="user_pic"><a href="#"><img src="images/client.jpg" alt=""/></a></div>
+                    <ul class="mylink">
+                        <li><a href="#">修改资料</a></li>
+                        <li><a href="#">修改资料</a></li>
+                        <li><a href="#">修改资料</a></li>
+                        <li><a href="#">修改资料</a></li>
+                        <li><a href="#">修改资料</a></li>
+                        <li><a href="#">修改资料</a></li>
+                        <li><a href="#">修改资料</a></li>
+                        <li><a href="#">修改资料</a></li>
+                    </ul>
+                </div>
+                <div class="uclink">
+                    <a href="#">注册账号</a> |
+                    <a href="#">忘记密码</a> |
+                    <a href="#">登陆账号</a>
+                </div>
+            </div>
+            <!--用户信息end-->
+            <!--推荐信息start-->
+            <div class="recommend">
+                <a href="#">
+                    <h3>这是标题</h3>
+                    这是内容这是内容这是内容
+                </a>
+                <span>吐血推荐</span>
+            </div>
+            <!--广告start-->
+            <div class="ad">
+                <a href="#">
+                    <img src="images/acmsd-01.jpg" alt=""/>
+                </a>
+            </div>
+            <!--置顶推荐start-->
+            <div class="sampleTab">
+                <h3>
+                    置顶推荐
+                </h3>
+
+                <div class="sampleTab_item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>
+
+                            <p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleTab_item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>
+
+                            <p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleTab_item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>
+
+                            <p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--置顶推荐end-->
+            <!--广告start-->
+            <div class="ad">
+                <a href="#">
+                    <img src="images/acmsd-01.jpg" alt=""/>
+                </a>
+            </div>
+            <!--广告end-->
+            <!--热门文章start-->
+            <div class="sampleTab">
+                <h3>
+                    热门文章
+                </h3>
+
+                <div class="sampleTab_item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="images/ac38a5c3df758c0cbd24c625d1f3a0f6.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>
+
+                            <p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sampleTab_item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>
+
+                            <p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--热门文章end-->
+            <!--广告start-->
+            <div class="ad">
+                <a href="#">
+                    <img src="images/acmsd-01.jpg" alt=""/>
+                </a>
+            </div>
+            <!--广告end-->
+            <!--链接start-->
+            <div class="sampleTab">
+                <h3>
+                    热门标签
+                </h3>
+
+                <div class="tab_items">
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                    <a href="#">sasasja</a>
+                </div>
+            </div>
+            <!--链接end-->
+        </div>
+        <div class="con_left">
+            <!--轮播start-->
+            <div class="banner">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/0001.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="images/0002.jpg" alt="...">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <!--轮播end-->
+            <!--今日观点start-->
+            <div class="todaypoint">
+                <h3><a href="#" class="point">【今日观点】</a><a href="#" class="today_tit">这是标题</a></h3>
+
+                <p>
+                    via：设计邦BMW电动车i3和i8中的"i"符号是宝马的子品牌，该品牌主要代表着新能源汽车和新的移动解决方案。近日宝马公司表示，宝马的子品牌"i"品牌新申请的“摆动臂驱动装置”技术专利，将会被应用...
+                </p>
+            </div>
+            <!--今日观点end-->
+            <!--标题start-->
+            <div class="title">
+                <h3>最新发布</h3>
+
+                <div class="more hidden-xs">
+                    <a href="#">热门标签</a>
+                    <a href="#">联系方式</a>
+                    <a href="#">标签</a>
+                    <a href="#">搜狐</a>
+                </div>
+            </div>
+            <!--标题end-->
+            <!--文章start-->
+            <article class="con_items">
+                <div class="con_item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#" class="media_icon hidden-xs">智驾</a>
+                                <a href="#" class="meida_tit">盐水也成为动力了？完全依靠盐水做为动力的汽车QUANT</a></h4>
+
+                            <p class="author">
+                                <a href="#"><span class="glyphicon glyphicon-time"></span>时间</a>
+                                <a href="#"><span class="glyphicon glyphicon-user"></span>作者</a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-eye-open"></span>阅读</a>
+                                <a href="#"><span class="glyphicon glyphicon-comment"></span>查看评论</a>
+                            </p>
+
+                            <p class="media_con hidden-xs"> QUANT e-sportlimousine
+                                的车身长超过5.25米、宽超过2.2米、高1.35米，外观设计采用和谐的线条，经过前挡风玻璃，穿越车顶，一直延伸到尾端。两个超长的鸥翼式车门分别覆盖了两侧的整个前部和后部的座位区，省去了B
+                                柱的设计。...</p>
+                            <a href="#" class="post_link">直达链接</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="images/ac38a5c3df758c0cbd24c625d1f3a0f6.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#" class="media_icon hidden-xs">智驾</a>
+                                <a href="#" class="meida_tit">这是标题</a></h4>
+
+                            <p class="author">
+                                <a href="#"><span class="glyphicon glyphicon-time"></span>时间</a>
+                                <a href="#"><span class="glyphicon glyphicon-user"></span>作者</a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-eye-open"></span>阅读</a>
+                                <a href="#"><span class="glyphicon glyphicon-comment"></span>查看评论</a>
+                            </p>
+
+                            <p class="media_con hidden-xs">这是内容...</p>
+                            <a href="#" class="post_link">直达链接</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="images/ac38a5c3df758c0cbd24c625d1f3a0f6.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#" class="media_icon hidden-xs">智驾</a>
+                                <a href="#" class="meida_tit">这是标题</a></h4>
+
+                            <p class="author">
+                                <a href="#"><span class="glyphicon glyphicon-time"></span>时间</a>
+                                <a href="#"><span class="glyphicon glyphicon-user"></span>作者</a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-eye-open"></span>阅读</a>
+                                <a href="#"><span class="glyphicon glyphicon-comment"></span>查看评论</a>
+                            </p>
+
+                            <p class="media_con hidden-xs">这是内容...</p>
+                            <a href="#" class="post_link">直达链接</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="con_item">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="images/ac38a5c3df758c0cbd24c625d1f3a0f6.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="#" class="media_icon hidden-xs">智驾</a>
+                                <a href="#" class="meida_tit">这是标题</a></h4>
+
+                            <p class="author">
+                                <a href="#"><span class="glyphicon glyphicon-time"></span>时间</a>
+                                <a href="#"><span class="glyphicon glyphicon-user"></span>作者</a>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-eye-open"></span>阅读</a>
+                                <a href="#"><span class="glyphicon glyphicon-comment"></span>查看评论</a>
+                            </p>
+
+                            <p class="media_con hidden-xs">这是内容...</p>
+                            <a href="#" class="post_link">直达链接</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!--文章end-->
+            <!--分页start-->
+            <div class="page">
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--分页start-->
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--内容部分end-->
+<footer>
+    <div class="container-fluid">
+        <h2>自适应主题 更专业 更方便</h2>
+        <a href="#">联系我们</a>
+        <a href="#">关于我们</a>
+    </div>
+</footer>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

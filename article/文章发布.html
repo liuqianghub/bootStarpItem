@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>文章发布</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/top.css"/>
+    <link rel="stylesheet" href="css/cover.css"/>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.js"></script>
+</head>
+<body>
+    <!--模态框start-->
+    <div class="mask" id="mask">
+        <div class="maskUl">
+            <ul>
+                <li class="LogOrReg">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <input type="button" value="登录/注册"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--模态框end-->
+    <!--头部start-->
+    <header class="header" data-spy="affix" data-offset-top="80">
+        <nav class="navbar navTop">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed maskShow">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Logo</a>
+                    <a class="nav_search" href="javascript:;"><span class="glyphicon glyphicon-search"></span>
+                        <div class="searchInp">
+                            <input type="tel" placeholder="请输入关键字" class="inpS"/>
+                            <span class="serS"><input type="button" class="btnS"/><span class="glyphicon glyphicon-search"></span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                <span class="glyphicon-class">首页</span>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-edit" ></span>
+                                <span class="glyphicon-class">创业资讯</span>
+                            </a>
+                            <ul class="secondUl">
+                                <li><a href="javascript:;">列表1</a></li>
+                                <li><a href="javascript:;">列表2</a></li>
+                                <li><a href="javascript:;">列表3</a></li>
+                                <li><a href="javascript:;">列表4</a></li>
+                                <li><a href="javascript:;">列表5</a></li>
+                                <li><a href="javascript:;">列表6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                                <span class="glyphicon-class">创业指导</span>
+                            </a>
+                            <ul class="secondUl">
+                                <li><a href="javascript:;">列表1</a></li>
+                                <li><a href="javascript:;">列表2</a></li>
+                                <li><a href="javascript:;">列表3</a></li>
+                                <li><a href="javascript:;">列表4</a></li>
+                                <li><a href="javascript:;">列表4</a></li>
+                                <li><a href="javascript:;">列表4</a></li>
+                                <li><a href="javascript:;">列表5</a></li>
+                                <li><a href="javascript:;">列表6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                                <span class="glyphicon-class">创业点子</span>
+                            </a>
+                            <ul class="secondUl">
+                                <li><a href="javascript:;">列表1</a></li>
+                                <li><a href="javascript:;">列表2</a></li>
+                                <li><a href="javascript:;">列表3</a></li>
+                                <li><a href="javascript:;">列表4</a></li>
+                                <li><a href="javascript:;">列表5</a></li>
+                                <li><a href="javascript:;">列表6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
+                                <span class="glyphicon-class">职场江湖</span>
+                            </a>
+                            <ul class="secondUl">
+                                <li><a href="javascript:;">列表1</a></li>
+                                <li><a href="javascript:;">列表2</a></li>
+                                <li><a href="javascript:;">列表3</a></li>
+                                <li><a href="javascript:;">列表5</a></li>
+                                <li><a href="javascript:;">列表6</a></li>
+                                <li><a href="javascript:;">列表6</a></li>
+                                <li><a href="javascript:;">列表6</a></li>
+                                <li><a href="javascript:;">列表6</a></li>
+                                <li><a href="javascript:;">列表6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                                <span class="glyphicon-class">求职攻略</span>
+                            </a>
+                            <ul class="secondUl">
+                                <li><a href="javascript:;">列表1</a></li>
+                                <li><a href="javascript:;">列表2</a></li>
+                                <li><a href="javascript:;">列表4</a></li>
+                                <li><a href="javascript:;">列表5</a></li>
+                                <li><a href="javascript:;">列表6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>
+                                <span class="glyphicon-class">励志</span>
+                            </a>
+                            <ul class="secondUl">
+                                <li><a href="javascript:;">列表1</a></li>
+                                <li><a href="javascript:;">列表2</a></li>
+                                <li><a href="javascript:;">列表3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!--头部end-->
+
+    <!--内容部分start-->
+    <div class="content">
+        <div class="container">
+            <div class="con_right hidden-sm hidden-xs">
+                <!--推荐信息start-->
+                <div class="recommend">
+                    <a href="#">
+                        <h3>这是标题</h3>
+                        这是内容这是内容这是内容
+                    </a>
+                    <span>吐血推荐</span>
+                </div>
+                <!--推荐信息end-->
+                <!--广告start-->
+                <div class="ad">
+                    <a href="#">
+                        <img src="images/acmsd-01.jpg" alt=""/>
+                    </a>
+                </div>
+                <!--广告end-->
+                <!--置顶推荐start-->
+                <div class="sampleTab">
+                    <h3>
+                        置顶推荐
+                    </h3>
+                    <div class="sampleTab_item">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>
+                                <p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sampleTab_item">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>
+                                <p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sampleTab_item">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>
+                                <p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--置顶推荐end-->
+                <!--广告start-->
+                <div class="ad">
+                    <a href="#">
+                        <img src="images/acmsd-01.jpg" alt=""/>
+                    </a>
+                </div>
+                <!--广告end-->
+                <!--热门文章start-->
+                <div class="sampleTab">
+                    <h3>
+                        热门文章
+                    </h3>
+                    <div class="sampleTab_item">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/ac38a5c3df758c0cbd24c625d1f3a0f6.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>
+                                <p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sampleTab_item">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>
+                                <p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--广告start-->
+                <div class="ad">
+                    <!--热门文章end-->
+                    <a href="#">
+                        <img src="images/acmsd-01.jpg" alt=""/>
+                    </a>
+                </div>
+                <!--广告end-->
+                <!--链接start-->
+                <div class="sampleTab">
+                    <h3>
+                        热门标签
+                    </h3>
+                    <div class="tab_items">
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                        <a href="#">sasasja</a>
+                    </div>
+                </div>
+                <!--<div class="con_right hidden-sm hidden-xs">-->
+                <!--&lt;!&ndash;推荐信息start&ndash;&gt;-->
+                <!--<div class="recommend">-->
+                <!--<a href="#">-->
+                <!--<h3>这是标题</h3>-->
+                <!--这是内容这是内容这是内容-->
+                <!--</a>-->
+                <!--<span>吐血推荐</span>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;推荐信息end&ndash;&gt;-->
+                <!--&lt;!&ndash;广告start&ndash;&gt;-->
+                <!--<div class="ad">-->
+                <!--<a href="#">-->
+                <!--<img src="images/acmsd-01.jpg" alt=""/>-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;广告end&ndash;&gt;-->
+                <!--&lt;!&ndash;置顶推荐start&ndash;&gt;-->
+                <!--<div class="sampleTab">-->
+                <!--<h3>-->
+                <!--置顶推荐-->
+                <!--</h3>-->
+                <!--<div class="sampleTab_item">-->
+                <!--<div class="media">-->
+                <!--<div class="media-left">-->
+                <!--<a href="#">-->
+                <!--<img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--<div class="media-body">-->
+                <!--<h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>-->
+                <!--<p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="sampleTab_item">-->
+                <!--<div class="media">-->
+                <!--<div class="media-left">-->
+                <!--<a href="#">-->
+                <!--<img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--<div class="media-body">-->
+                <!--<h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>-->
+                <!--<p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="sampleTab_item">-->
+                <!--<div class="media">-->
+                <!--<div class="media-left">-->
+                <!--<a href="#">-->
+                <!--<img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--<div class="media-body">-->
+                <!--<h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>-->
+                <!--<p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;置顶推荐end&ndash;&gt;-->
+                <!--&lt;!&ndash;广告start&ndash;&gt;-->
+                <!--<div class="ad">-->
+                <!--<a href="#">-->
+                <!--<img src="images/acmsd-01.jpg" alt=""/>-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;广告end&ndash;&gt;-->
+                <!--&lt;!&ndash;热门文章start&ndash;&gt;-->
+                <!--<div class="sampleTab">-->
+                <!--<h3>-->
+                <!--热门文章-->
+                <!--</h3>-->
+                <!--<div class="sampleTab_item">-->
+                <!--<div class="media">-->
+                <!--<div class="media-left">-->
+                <!--<a href="#">-->
+                <!--<img class="media-object" src="images/ac38a5c3df758c0cbd24c625d1f3a0f6.jpg" alt="...">-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--<div class="media-body">-->
+                <!--<h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>-->
+                <!--<p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="sampleTab_item">-->
+                <!--<div class="media">-->
+                <!--<div class="media-left">-->
+                <!--<a href="#">-->
+                <!--<img class="media-object" src="images/5b75742c2b4e87f0cf6af0dfcd41538b.jpg" alt="...">-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--<div class="media-body">-->
+                <!--<h4 class="media-heading"><a href="#" class="sampleTab_tit">在奔向未来的路上，人控制汽车还是汽车控制人？</a></h4>-->
+                <!--<p><span class="time">2016-01-15</span> <a href="#">查看评论</a></p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;热门文章end&ndash;&gt;-->
+                <!--&lt;!&ndash;广告start&ndash;&gt;-->
+                <!--<div class="ad">-->
+                <!--<a href="#">-->
+                <!--<img src="images/acmsd-01.jpg" alt=""/>-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;广告end&ndash;&gt;-->
+                <!--&lt;!&ndash;链接start&ndash;&gt;-->
+                <!--<div class="sampleTab">-->
+                <!--<h3>-->
+                <!--热门标签-->
+                <!--</h3>-->
+                <!--<div class="tab_items">-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--<a href="#">sasasja</a>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;链接end&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--<div class="con_left">-->
+                <!--</div>-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            </div>
+            <div class=" content_left">
+                <div class="section_wrap ">
+                    <div class="section_header">
+                        <a href="#"><h1>iPhone按钮不够用？不用蓝牙不用电，声波就能控制！</h1></a>
+                        <div class="section_meta">
+                            <span>2016-01-15 21:14:43</span>
+                            <span>来源：互联网</span>
+                            <span>分类: <a href="#">设备</a></span>
+                            <span>
+                                <span class="glyphicon glyphicon-eye-open">
+                                </span>阅读(4747)</span>
+                            <span>
+                                <span class="glyphicon glyphicon-edit">
+                                </span><a href="#">查看评论</a></span>
+                        </div>
+                    </div>
+                    <article class="articcle">
+                        <div class="article_img container">
+                            <img src="images/photo1.jpg" alt=""/>
+                        </div>
+                        <p>不知道你觉得iPhone手机的按键是否够用呢？</p>
+                        <p>你又是否曾经想过，在iPhone上装上其他的控制设备呢？</p>
+                        <p>卡内基梅隆大学的研究人员和迪士尼合作已经找到了如何利用超声波和iPhone的扬声器和麦克风来控制手机，他们将这个技术命名为Acoustrument。用技术概念来说，就是声学驱动和手持设备交互控制。</p>
+                        <p>研究人员用一些带有特定传感器的空心链接管接到iPhone的麦克风上，这些空心管上带有额外增加物理按键，杠杆，刻度盘等控制器，然后使iPhone发出连续的的超声波，使用控制器像摩斯电码一样分割声音，接着在手机上的专用软件分析这些变化的声波，提供给不同的应用。</p>
+                        <p>通过使用不同尺寸、样式、强度和直径的空心管，研究员创造了一系列让人印象深刻的交互。</p>
+                        <div class="article_img">
+                            <img src="images/photo2.jpg" alt=""/>
+                        </div>
+                        <p>用智能手机作为控制体来控制家电和机器人已经是一个日益增长的趋势，Acoustrument 可以使控制的方式更加的丰富。</p>
+                        <p>一般用手机去控制一些外部的设备都是用蓝牙来实现，但是蓝牙都需要一个外部电源，而 Acoustrument 只需要声波和手机里的软件，不需要电池。</p>
+                        <div class="article_img"><img src="images/photo3.jpg" alt=""/></div>
+                        <p>这一技术无论是作为手机的控制器还是控制其他的设备，都保持了99%的准确性，在准确性提升后，研究者们就开始制造各种稀奇古怪的东西，他们以iPhone为中心，控制Google cardboard VR头盔，用摇杆开关和按钮定制iPhone GPS车载部分等等……</p>
+                        <p>迪士尼参与到此项目中，也是希望未来可以把这一技术放到玩具中。</p>
+                        <p class="articcle_warn">未经允许不得转载：<a href="#">iPhone按钮不够用？不用蓝牙不用电，声波就能控制！</a></p>
+                        <div class="article_jump">
+                            上一篇:<a href="#">Tado Cooling 智能空调控制器：想要几度就几度</a><br/>
+                            下一篇:<a href="#">返回列表</a>
+                        </div>
+                        <div class="article_share">
+                            <span>分享到:</span>
+                            <a href="#"><img src="images/item01.png" alt=""/></a>
+                            <a href="#"><img src="images/item01.png" alt=""/></a>
+                            <a href="#"><img src="images/item01.png" alt=""/></a>
+                            <a href="#"><img src="images/item01.png" alt=""/></a>
+                            <a href="#"><img src="images/item01.png" alt=""/></a>
+                            <a href="#"><img src="images/item01.png" alt=""/></a>
+                            <a href="#">更多</a>
+                        </div>
+                        <div class="article_tags">
+                            标签:
+                            <a href="#">智能手机</a>
+                            <a href="#">智能手机</a>
+                            <a href="#">智能手机</a>
+                            <a href="#">智能手机</a>
+                            <a href="#">智能手机</a>
+                        </div>
+                        <h3>相关推荐</h3>
+                    </article>
+                    <div class="section_discuss">
+                        <ul>
+                            <li><a href="#">便携式打印机Droprinter，智能手机的</a></li>
+                            <li><a href="#">专门适配iPhone设备的EL-8 Titaniu</a></li>
+                        </ul>
+                        <p>评论</p>
+                    </div>
+
+                    <p>
+                        <!--高速版-->
+
+                    <div id="SOHUCS"></div>
+                    <script charset="utf-8" type="text/javascript"
+                            src="http://changyan.sohu.com/upload/changyan.js"></script>
+                    <script type="text/javascript">
+                        window.changyan.api.config({
+                            appid: 'cy2rgHwBn0Qe',
+                            conf: 'prod_07a96b1f61097ccb54be14d6a47439b0'
+                        });
+                    </script>
+                    </p>
+
+                </div>
+            </div>
+            <!--</div>-->
+        </div>
+    </div>
+    <!--内容部分end-->
+    <footer>
+        <div class="container-fluid">
+            <h2>自适应主题 更专业 更方便</h2>
+            <a href="#">联系我们</a>
+            <a href="#">关于我们</a>
+        </div>
+    </footer>
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/index.js"></script></div>
+</body>
+</html>

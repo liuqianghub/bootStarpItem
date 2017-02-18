@@ -1,0 +1,44 @@
+body,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,input,html,p {
+    margin: 0;
+    padding: 0;
+}
+ ul li {
+    list-style: none;
+}
+img,input {
+    border: 0;
+}
+body {
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    color: #ccc;
+    background: white;
+    min-width: 300px;
+}
+b {
+    font-weight: normal;
+}
+a{
+    color: #333;
+}
+a:hover{
+    color: #e38d13;
+    text-decoration: none;
+}
+.clearfix:before {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
